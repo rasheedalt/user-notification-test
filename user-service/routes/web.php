@@ -17,8 +17,8 @@ use App\Http\Controllers\UserController;
 */
 
 $router->get('/', function () use ($router) {
-    Redis::set('hello', 'yes');
-    Print(Redis::get('hello') ?: 'Key not found');
+    // Redis::set('hello', 'yes');
+    // Print(Redis::get('hello') ?: 'Key not found');
     return $router->app->version();
 });
 
